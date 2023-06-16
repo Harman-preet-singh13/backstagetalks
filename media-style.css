@@ -1,0 +1,16 @@
+@media(max-width:425px){
+    .left-bottom{
+        max-width:300px;
+    } 
+}
+
+
+@media(max-width:375px){
+    .left-bottom{
+        max-width:250px;
+    } 
+
+    .issue-container{
+        top: 74%;
+    }
+}

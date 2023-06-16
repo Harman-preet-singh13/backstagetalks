@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* restst */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-y: repeat(100vh);
+    scroll-snap-points-y: repeat(100vh);
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+
+:root {
+    --text-color-black: #251d20;
+    --text-color-white: #ffffff;
+
+    --primary-font-size: 18px;
+    --secondary-font-size: 15px;
+
+    --font-family: "Roboto", "Helvetica Neue";
+    --fw-400: 500;
+    --fw-700: 600;
+
+    --fs-300: 0.6875rem;
+    --fs-400: 0.8125rem;
+    --fs-500: 1.1rem;
+    --fs-600: 1.25rem;
+}
+
+
+
+body {
+    font-family: var(--font-family);
+
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+a:active {
+    text-decoration: black;
+}
+
+.container {
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* components */
+
+.navbar{
+    position: fixed;
+    top: 2%;
+}
+
+.logo img {
+    width: 18rem;
+}
+
+
+.company-email a {
+    color: var(--text-color-black);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-700);
+}
+
+
+
+
+/* section3-privacy */
+
+.left-bottom {
+    position: fixed;
+    width: 370px;
+    bottom: 30px;
+}
+
+.section3-privacy h3 p {
+    color: var(--text-color-black);
+}
+
+.section3-privacy a {
+    color: var(--text-color-black)
+}
+
+
+.padding-privacy {
+    padding-top: 13px;
+}
+
+
+/* section4-issue */
+
+.issue-container a {
+    color: var(--text-color-black);
+    font-size: var(--fs-500);
+}
+
+.issue-container {
+    flex-direction: column;
+    gap: 5px;
+
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+}
+
+
+/* mian-content */
+
+
+
+section {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+
+h1 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--text-color-black);
+    width: 100%;
+    left: 0;
+    font-size: calc(1rem + 3vw);
+}
+
+
+/* main-section */
+
+.book-cover{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+}
+
+.book-cover p{
+    color: var(--text-color-black);
+    font-weight: var(--fw-700);
+
+}
+.book-cover a{
+    padding-top: 10px;
+    font-weight: var(--fw-400);
+}
+
+.cover-buy7{
+    color: #ffffff;
+}
+
+
+.issue7{
+    background-color: #ff608c;
+}
+
+.cover-buy6{
+    color: var(--text-color-black)
+}
+
+.issue5{
+    background-color: #00c1b5;
+}
+
+.issue4{
+    background-color: #ff6519;
+}
+
+.issue3{
+    background-color: #ffbe00;
+}
+
+.cover-buy2{
+    color: var(--text-color-black)
+}
+
+.issue1{
+    background-color: #e30512;
+}
